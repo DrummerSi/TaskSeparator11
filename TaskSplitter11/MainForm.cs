@@ -1,0 +1,95 @@
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using IWshRuntimeLibrary;
+using WindowsShortcutFactory;
+using File = System.IO.File;
+
+namespace TaskSplitter11
+{
+    public partial class MainForm : Form
+    {
+        public enum ShowWindowCommands : int
+        {
+
+            SW_HIDE = 0,
+            SW_SHOWNORMAL = 1,
+            SW_NORMAL = 1,
+            SW_SHOWMINIMIZED = 2,
+            SW_SHOWMAXIMIZED = 3,
+            SW_MAXIMIZE = 3,
+            SW_SHOWNOACTIVATE = 4,
+            SW_SHOW = 5,
+            SW_MINIMIZE = 6,
+            SW_SHOWMINNOACTIVE = 7,
+            SW_SHOWNA = 8,
+            SW_RESTORE = 9,
+            SW_SHOWDEFAULT = 10,
+            SW_MAX = 10
+        }
+        [DllImport("shell32.dll")]
+        public static extern IntPtr ShellExecute(
+            IntPtr hwnd,
+            string lpszOp,
+            string lpszFile,
+            string lpszParams,
+            string lpszDir,
+            ShowWindowCommands FsShowCmd
+        );
+
+
+
+        public MainForm()
+        {
+            InitializeComponent();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+
+            //Create a shortcut to the Splitter exe
+            var docsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string appPath = Path.GetDirectoryName(Application.ExecutablePath);
+
+
+
+            string shortcutsPath = Path.Join(docsPath, "TaskSeparator11", "Shortcuts");
+            Directory.CreateDirectory(shortcutsPath);
+
+            string linkLocation = GetNewLinkName(shortcutsPath);
+            string splitterExe = Path.Join(appPath, "Splitter.exe");
+
+            //Create shortcut
+            using var shortcut = new WindowsShortcut
+            {
+                Path = splitterExe,
+            };
+            shortcut.Save(linkLocation);
+
+
+            ShellExecute(IntPtr.Zero, "open", linkLocation, "--gui", null, ShowWindowCommands.SW_NORMAL);
+
+            Application.Exit();
+
+        }
+
+        private string GetNewLinkName(string path)
+        {
+            int count = 1;
+            char c = ' ';
+
+            string shortcutLink = Path.Join(path, $"{c}.lnk");
+            do
+            {
+                shortcutLink = Path.Join(path, $"{new string(c, count)}.lnk");
+                count++;
+            } while (File.Exists(shortcutLink));
+
+            return shortcutLink;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
