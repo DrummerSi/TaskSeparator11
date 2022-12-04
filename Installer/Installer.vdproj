@@ -167,7 +167,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Task Separator 11"
         "ProductCode" = "8:{10D996CA-5140-40B5-91BA-196AD485FA42}"
-        "PackageCode" = "8:{8F9EE382-AAE3-4023-9709-15FF79118EE6}"
+        "PackageCode" = "8:{642AADB6-7235-4887-8D35-7F26B10A6F5A}"
         "UpgradeCode" = "8:{BB2FFC59-BD81-4C0C-A847-1D88E7052BE7}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -191,7 +191,7 @@
         "TargetPlatform" = "3:0"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
-        "RunPostBuildEvent" = "3:0"
+        "RunPostBuildEvent" = "3:1"
         }
         "Registry"
         {
@@ -716,7 +716,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_17CBAA1275BC49BCB84FFD88E0DFB83B"
             {
-            "SourcePath" = "8:..\\TaskSplitter11\\obj\\Debug\\net6.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\TaskSplitter11\\obj\\Release\\net6.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_C28DAC9F82D54A01885C0E27F99A46DA"

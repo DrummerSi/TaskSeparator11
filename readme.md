@@ -8,8 +8,9 @@ Task Separator 11 allows you to add one or more splitters to the Windows 11 Task
 
 
 ## Installation
+Install the latest release directly from the releases tab:
 
-
+[https://github.com/DrummerSi/TaskSeparator11/releases](https://github.com/DrummerSi/TaskSeparator11/releases)
 
 
 ## Copyright
