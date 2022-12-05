@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Splitter": {
+      "commandName": "Project",
+      "commandLineArgs": "--gui"
+    }
+  }
+}

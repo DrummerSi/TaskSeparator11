@@ -9,6 +9,7 @@
     <ApplicationIcon>icons\icons8-taskbar-96.ico</ApplicationIcon>
     <Title>TaskSeperator11</Title>
     <PackageIcon>icons8-taskbar-96.png</PackageIcon>
+    <FileVersion>1.0.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
