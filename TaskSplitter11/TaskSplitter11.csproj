@@ -7,7 +7,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>icons\icons8-taskbar-96.ico</ApplicationIcon>
-    <Title>TaskSeperator11</Title>
+    <Title>TaskSeparator11</Title>
     <PackageIcon>icons8-taskbar-96.png</PackageIcon>
   </PropertyGroup>
 
