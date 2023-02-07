@@ -305,7 +305,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_17DEED2792A146B8B965D370239987F2"
             {
-            "Name" = "8:Task Seperator 11"
+            "Name" = "8:Task Separator 11"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -319,7 +319,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_47D6E655BEA84629BB7D63FAF58AF175"
             {
-            "Name" = "8:Task Seperator 11"
+            "Name" = "8:Task Separator 11"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"

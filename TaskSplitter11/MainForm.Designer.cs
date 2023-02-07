@@ -65,7 +65,7 @@
             this.MinimizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TaskSeperator11";
+            this.Text = "TaskSeparator11";
             this.ResumeLayout(false);
 
         }
