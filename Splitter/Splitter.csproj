@@ -6,11 +6,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <ApplicationIcon>icons\seperator.ico</ApplicationIcon>
+    <ApplicationIcon>icons\separator.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="icons\seperator.ico" />
+    <Content Include="icons\separator.ico" />
   </ItemGroup>
 
 </Project>
