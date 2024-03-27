@@ -17,3 +17,7 @@ Install the latest release directly from the releases tab:
 
 Task Separator 11 is licenced under the MIT licence.
 
+
+![image](https://github.com/DrummerSi/TaskSeparator11/assets/1278476/8c6cb8cb-3f2f-46a3-827f-89f81631a36e)
+
+
